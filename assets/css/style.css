@@ -62,21 +62,3 @@ img {
     text-decoration: none;
 }
 
-#left-about {
-    padding-top: 10px;
-    width: 81%;
-    float: left;
-}
-
-#right-about {
-    padding-top: 30px;
-    width: 51%;
-    float: right;
-}
-
-#center-about {
-    padding-top: 10px;
-    width: 100%;
-    margin: 0 auto;
-}
-
