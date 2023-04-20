@@ -1,7 +1,38 @@
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'Oswald' sans-serif;
+padding: 0;
+font-family: 'Oswald', sans-serif;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 5% 2%;
+    font-weight: 100;
 }
 
 h1, h2 {
@@ -12,18 +43,19 @@ h1, h2 {
 }
 
 h3 {
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: deepskyblue;
     letter-spacing: 2px;
 }
 
-#metaphor {
-    font-size: 200%;
+p {
+    text-align: left;
 }
 
 .fixed-top {
     position: fixed;
+    height: 50px;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -35,15 +67,14 @@ nav ul {
     text-align: right;
     padding: 0;
     margin: 0;
-    top: 0;
+    height: 50px;
 }
 
 nav li {
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
+    font-size: 14px;
+    line-height: 2;
     display: inline-block;
-    margin: 1%;
+    margin: 10px;
 }
 
 nav a {
@@ -59,19 +90,37 @@ nav a:hover {
 }
 
 .card {
-    float: left;
-    width: 31%;
-    margin-left: 1.8%;
+    width: 33%;
 }
 
 .card a {
     text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
-img {
+.image-wrapper {
     width: 100%;
-    height: 280px;
-}
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-wrapper img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  img {
+      height: 200px;
+  }
 
 #menu a {
     text-decoration: none;
@@ -90,11 +139,13 @@ img {
 }
 
 footer{
-    height: 80px;
+    height: 50px;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-position: bottom;
+    right: 0;
+    left: 0;
 }
 
 .social-networks{
