@@ -22,12 +22,20 @@ h3 {
     font-size: 200%;
 }
 
+.fixed-top {
+    position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
 nav ul {
     list-style: none;
     background-color: #4a4a4f;
     text-align: right;
     padding: 0;
     margin: 0;
+    top: 0;
 }
 
 nav li {
@@ -82,7 +90,11 @@ img {
 }
 
 footer{
-    height: 150px;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-position: bottom;
 }
 
 .social-networks{
