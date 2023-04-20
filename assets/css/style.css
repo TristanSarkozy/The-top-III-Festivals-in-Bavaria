@@ -104,10 +104,49 @@ footer{
 
 #photos-gallery {
     line-height: 0;
-    column-count: 4;
+    column-count: 3;
     column-gap: 0;
+    margin: 2%;
 }
 
 #photos-gallery > img {
     width: 100%;
+    height: auto;
 }
+
+@media screen and (max-width: 1200px) {
+    #photos-gallery {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    h1, h2 {
+        width: 90%;
+        float: left;
+    }   
+}
+
+@media screen and (max-width: 950px) {
+    #photos-gallery {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+    h1, h2 {
+        width: 90%;
+        float: left;
+    }
+    .card h2 {
+        width: 100%;
+        text-align: center;
+    }   
+}
+
+.form-section {
+    clear: left;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+    
