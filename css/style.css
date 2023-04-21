@@ -233,6 +233,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .signup-form {
@@ -240,7 +241,6 @@ footer {
     flex-direction: column;
     width: 90%;
     max-width: 300px;
-    z-index: -1;
 }
 
 input {
