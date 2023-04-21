@@ -39,8 +39,39 @@ List of Features
 
 5. Responsive design for mobile and desktop devices.
 
+![design responsive 2023-04-21 12-18-18](https://user-images.githubusercontent.com/114732027/233614996-eb1fbcf7-0fcd-4902-a98b-a782619c8eed.png)
+
+
 UX/UI
 
 The website has a modern and minimalistic design that is easy to navigate. The hero image on the home page creates a visual impact and draws the user's attention to the call-to-action button. The navigation bar is fixed to the top of the screen, making it easy for users to access different pages of the website. The gallery page is designed with a grid layout that allows users to view the festival photos in an organized way. The contact page has a simple and intuitive sign-up form that includes input validation.
+
+Validator Testing
+
+HTML
+No errors were returned when passing through the official W3C validator
+
+CSS
+No errors were found when passing through the official (Jigsaw) validator
+
+Unfixed Bugs
+   - no unfixed bugs
+
+Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+   - In the GitHub repository, navigate to the Settings tab
+   - From the source section drop-down menu, select the Master Branch
+   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - https://tristansarkozy.github.io/The-top-III-Festivals-in-Bavaria/
+
+Content
+   - The text for the Home page was taken from Wikipedia pages
+   - The icons in the footer were taken from Font Awesome
+
+Media
+   - The photos used on the home page are from www.pexels.com, www.pixbay.com
+   - The images used for the gallery page were taken from this other open source site
+
+
 
 
