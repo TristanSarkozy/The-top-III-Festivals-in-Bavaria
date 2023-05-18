@@ -1,11 +1,11 @@
+/* Font defined for the page */
+
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Oswald', sans-serif;
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
+
+/* Section and main content styles are displayed as vertical columns */
 
 section {
     display: flex;
@@ -22,14 +22,15 @@ main {
     padding: 0 20px;
 }
 
-.row {
+/* Elements within the container are styled side by side with a gap of 10px */
+
+.container {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
-    margin-right: 10px;
 }
 
-/* Headings */
+/* Headings are styled differently: Large font size for heading 1, center alignment, blue color and uppercase text for h1,h2, h3 */
 
 h1 {
     font-size: 40px;
@@ -53,11 +54,19 @@ h3 {
     letter-spacing: 2px;
 }
 
+.custom-margin {
+    margin-top: 10px;
+}
+
+.gallery-container {
+    margin: 50px 0;
+}
+
 p {
     text-align: left;
 }
 
-/* Navigation */
+/* Navigation is fixed and styled with hover function at the top of the page*/
 
 .fixed-top {
     position: fixed;
@@ -107,7 +116,7 @@ nav a:hover {
     flex-direction: column;
 }
 
-/* Images */
+/* Images have different sizes, maintain aspect ratio and are centered vertically and horizontally */
 
 .image-wrapper {
     width: 100%;
@@ -125,9 +134,9 @@ nav a:hover {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    margin-left: 20px;
-    margin-right: 20px;
 }
+
+/* Styles for photo gallery with gaps between items and layout, displayed in grid */
 
 img {
     height: 200px;
@@ -143,6 +152,7 @@ img {
     width: 33%;
     border: 1px solid #333;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 #photos-gallery {
@@ -152,16 +162,16 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     z-index: -1;
+    width: 98%;
 }
 
 #photos-gallery .gallery-column {
     width: 24%;
 }
 
-/* Footer */
+/* Footer fixed at the bottom of the page*/
 
 footer {
-    height: 50px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -170,10 +180,16 @@ footer {
     left: 0;
 }
 
+/* Styles for social networks section are center aligned, the list items are displayed inline and large font size is used for the icons */
+
 .social-networks {
     text-align: center;
     background-color: #4a4a4f;
-
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-networks li {
@@ -182,16 +198,8 @@ footer {
 
 .social-networks i {
     font-size: 160%;
-    margin-bottom: 1%;
-    padding: 1%;
+    padding: 5px;
     color: #fff;
-}
-
-#photos-gallery {
-    line-height: 0;
-    column-count: 3;
-    column-gap: 0;
-    margin: 2%;
 }
 
 #photos-gallery>img {
@@ -199,14 +207,21 @@ footer {
     height: auto;
 }
 
+/* Media queries for screens witdh up to 1200px, 950px, 600px, 400px */
+
 @media screen and (max-width: 1200px) {}
 
 @media screen and (max-width: 950px) {}
 
 @media screen and (max-width: 600px) {
+
+    /* Heading 3 smaller in order to fit smaller screen size */
+
     h3 {
         font-size: 11px;
     }
+
+    /* Images to be displayed on 3 columns */
 
     #photos-gallery .gallery-column {
         width: 32%;
@@ -214,10 +229,15 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-    .row {
+
+    /* Elements inside container to be displayed one under the other */
+
+    .container {
         flex-direction: column;
         width: 92%;
     }
+
+/* Full width for cards and rank sections on smaller screens */
 
     .card,
     .rankI,
@@ -227,7 +247,7 @@ footer {
     }
 }
 
-/* Form */
+/* Form styles well defined */
 
 .form-section {
     display: flex;
@@ -236,6 +256,8 @@ footer {
     z-index: 2;
 }
 
+/* Form displayed as a column with a maximum width of 300px */
+
 .signup-form {
     display: flex;
     flex-direction: column;
@@ -243,11 +265,15 @@ footer {
     max-width: 300px;
 }
 
+/* Rounded border and padding style for input fields */
+
 input {
     border-radius: 5px;
     padding: 10px;
     border: 1px solid #d7d7d7;
 }
+
+/* Label styles well defined */
 
 label {
     margin-top: 15px;
@@ -255,6 +281,8 @@ label {
     text-align: left;
     color: #8e8e8e;
 }
+
+/* Join-button styles well defined */
 
 .join-button {
     margin-top: 30px;
