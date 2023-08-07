@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <!-- The document's metadata including character encoding, compatibility settings, and viewport settings. -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Top III Festivals in Bavaria, Germany">
     <meta name="keywords" content="Festivals, Bavaria, Germany, Oktoberfest, Tollwood, Sandkerwa">
 
+    <!-- Links to external resources: a stylesheet for styling and a favicon for the browser tab. -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -16,6 +19,7 @@
 <body>
     <header class="fixed-top">
         <nav>
+            <!-- Unordered list of menu items -->
             <ul id="menu">
                 <li><a href="index.html">Infos</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -23,21 +27,35 @@
             </ul>
         </nav>
     </header>
+
+    <!-- This section contains a form for user sign-up -->
     <section class="form-section">
         <form method="GET" action="confirmation.html" class="signup-form">
+
+            <!-- Heading indicating that this is a sign-up form -->
             <h2>Sign up HERE!</h2>
+
+            <!-- Label and input field for user's first name -->
             <label for="fname">First Name</label>
             <input id="fname" name="first_name" type="text" required>
 
+            <!-- Label and input field for user's last name -->
             <label for="lname">Last Name</label>
             <input id="lname" name="last_name" type="text" required>
 
+            <!-- Label and input field for user's email address -->
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email_address" required>
+
+            <!-- Button for submitting the form -->
             <input class="join-button" type="submit" value="Submit!">
         </form>
     </section>
+
+    <!-- The footer section containing links to social media profiles. -->
     <footer>
+
+        <!-- Unordered list for social media links. -->
         <ul class="social-networks">
             <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
             </li>
@@ -50,6 +68,7 @@
         </ul>
     </footer>
 
+    <!-- Script tag to include the FontAwesome icon library. -->
     <script src="https://kit.fontawesome.com/b83175b9a4.js" crossorigin="anonymous"></script>
 </body>
 </html>
